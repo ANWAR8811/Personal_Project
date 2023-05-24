@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652784267 source:/Users/mdanwarhossain/Documents/C programming/Structure/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652784664 source:/Users/mdanwarhossain/Documents/C programming/Structure/1st.c
+	<stdio.h>
+

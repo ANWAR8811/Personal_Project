@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652382503 source:/Users/mdanwarhossain/Documents/C programming/Time table/1st time table.c
+	<stdio.h>
+
+1652382105 source:/Users/mdanwarhossain/Documents/C programming/Time table/main.c
+	<stdio.h>
+	<stdlib.h>
+

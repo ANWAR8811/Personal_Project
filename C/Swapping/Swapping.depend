@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652295156 source:/Users/mdanwarhossain/Documents/C programming/Swapping/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652295948 source:/Users/mdanwarhossain/Documents/C programming/Swapping/Swap.c
+	<stdio.h>
+

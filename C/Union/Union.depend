@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652799929 source:/Users/mdanwarhossain/Documents/C programming/Union/1st.c
+	<stdio.h>
+
+1652799574 source:/Users/mdanwarhossain/Documents/C programming/Union/main.c
+	<stdio.h>
+	<stdlib.h>
+
