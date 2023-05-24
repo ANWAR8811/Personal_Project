@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652363620 source:/Users/mdanwarhossain/Documents/C programming/Logical operator/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652364081 source:/Users/mdanwarhossain/Documents/C programming/Logical operator/Vow or con.c
+	<stdio.h>
+
