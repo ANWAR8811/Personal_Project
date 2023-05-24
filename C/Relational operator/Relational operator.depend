@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652356160 source:/Users/mdanwarhossain/Documents/C programming/Relational operator/1st.c
+	<stdio.h>
+
+1652355706 source:/Users/mdanwarhossain/Documents/C programming/Relational operator/main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652609453 source:/Users/mdanwarhossain/Documents/C programming/Series in C program/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652609815 source:/Users/mdanwarhossain/Documents/C programming/Series in C program/1st series.c
+	<stdio.h>
+

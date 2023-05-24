@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1652269290 source:/Users/mdanwarhossain/Documents/C programming/Size of/1st.c
+
+1652269737 source:/Users/mdanwarhossain/Documents/C programming/Size of/2nd.c
+	<stdio.h>
+
+1652269216 source:/Users/mdanwarhossain/Documents/C programming/Size of/main.c
+	<stdio.h>
+	<stdlib.h>
+
