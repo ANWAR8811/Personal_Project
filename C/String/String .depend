@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652700328 source:/Users/mdanwarhossain/Documents/C programming/String /1st String.c
+	<stdio.h>
+
+1652700118 source:/Users/mdanwarhossain/Documents/C programming/String /main.c
+	<stdio.h>
+	<stdlib.h>
+
