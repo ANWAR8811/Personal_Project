@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652286537 source:/Users/mdanwarhossain/Documents/C programming/Operator/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652287361 source:/Users/mdanwarhossain/Documents/C programming/Operator/Summation.c
+	<stdio.h>
+
