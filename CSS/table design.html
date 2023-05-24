@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Table design</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+            height: 30px;
+            vertical-align: baseline;
+        }
+
+        tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(142, 202, 154);
+        }
+
+        tr:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Student details</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>Phone</th>
+            <th>Bio</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rana</td>
+            <td>0.99</td>
+            <td>017976...</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil quaerat dolorum, sed culpa alias
+                adipisci a dicta quam nam.</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Ranao</td>
+            <td>0.99</td>
+            <td>017976...</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil quaerat dolorum, sed culpa alias
+                adipisci a dicta quam nam.</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Dana</td>
+            <td>2.99</td>
+            <td>017976...</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil quaerat dolorum, sed culpa alias
+                adipisci a dicta quam nam.</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Raia</td>
+            <td>5.99</td>
+            <td>017976...</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil quaerat dolorum, sed culpa alias
+                adipisci a dicta quam nam.</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Ranah</td>
+            <td>8.99</td>
+            <td>017976...</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil quaerat dolorum, sed culpa alias
+                adipisci a dicta quam nam.</td>
+        </tr>
+    </table>
+</body>
+
+</html>

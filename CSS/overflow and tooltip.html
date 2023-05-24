@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Overflow and tooltip</title>
+    <style>
+        div {
+            height: 150px;
+            width: 200px;
+            border: 3px solid green;
+            background-color: blue;
+            overflow: auto;
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .tooltip-text {
+            width: 150px;
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+            visibility: hidden;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="tooltip">
+        Facebook
+        <span class="tooltip-text">This is facebook</span>
+    </a>
+    <br><br>
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae autem excepturi qui delectus enim animi ab
+        ipsum, impedit culpa officiis repellendus mollitia obcaecati. Commodi odio in aperiam magni atque itaque quasi
+        at nostrum maiores recusandae. Aliquid exercitationem consequatur at ea necessitatibus labore id dolor libero
+        officiis perferendis ullam numquam rem excepturi dolorum cupiditate expedita maiores, laudantium sit harum
+        quasi. Neque iusto alias eligendi reprehenderit nemo corrupti recusandae animi quasi placeat, quos illum hic
+        perspiciatis ex molestias aspernatur et. Ex repudiandae eos veniam ut officia iure perspiciatis unde,
+        necessitatibus asperiores, error vero. Ducimus esse atque illo libero neque corporis ipsum cumque!</div>
+</body>
+
+</html>

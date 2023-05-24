@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>List style</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .list {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        .list ul {
+            /* list-style-type: decimal;
+            list-style-position: inside;
+            list-style-image: url(check-mark.png); */
+
+            /* list-style: url(check-mark.png) decimal inside; */
+
+            list-style-type: none;
+        }
+
+        .list ul li {
+            font-size: 2rem;
+        }
+
+        .list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+
+            display: inline-block;
+            margin: 10px 5px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>CPP</li>
+        </ul>
+    </div>
+</body>
+
+</html>

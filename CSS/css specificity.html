@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+
+    <style>
+        h1 {
+            background-color: grey;
+        }
+
+        #heading {
+            background-color: blue;
+        }
+
+        h1 .title #heading {
+            background-color: green;
+        }
+
+        h1#heading {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="title" id="heading">
+        Hey is that you!
+    </h1>
+</body>
+
+</html>

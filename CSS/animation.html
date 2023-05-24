@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        img {
+            max-width: 400px;
+            height: auto;
+            border: 5px solid black;
+
+            display: block;
+            margin: 0 auto;
+
+            margin-top: 100px;
+            border-radius: 50%;
+
+            /* animation-name: trans;
+            animation-duration: 3s;
+            position: relative; */
+        }
+
+        img:hover {
+            animation-name: trans;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            position: relative;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes trans {
+            /* from {
+                max-width: 400px;
+                border: 5px solid black;
+            }
+
+            to {
+                max-width: 700px;
+                border: 5px solid rgb(21, 226, 76);
+            } */
+
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: 100px;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://th.bing.com/th/id/R.95d75586f29a25cace77db4b5278e89a?rik=VCca%2f%2b%2bGj4WBCg&riu=http%3a%2f%2f4everstatic.com%2fimages%2f850xX%2fart%2ffilm-et-serie%2ftransformers-183249.jpg&ehk=gx7zZxiSrE5yJ7xmYJsP6J4g5K1ltUsmhvRqPu5jTw8%3d&risl=&pid=ImgRaw&r=0"
+        alt="">
+</body>
+
+</html>

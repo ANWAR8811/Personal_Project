@@ -1,1 +1,9 @@
-<style>Write here</style>
+        h1 {
+            color: rgb(224, 141, 17);
+            font: 180%;
+        }
+
+        p {
+            color: rgb(224, 17, 214);
+            font: 100%;
+        }

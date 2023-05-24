@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form desing</title>
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin: 20px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* border: none;
+            border-bottom: 2px solid black; */
+        }
+
+        #search {
+            background-image: url(search_FILL0_wght400_GRAD0_opsz48.png);
+            background-repeat: no-repeat;
+            padding: 10px 35px;
+            background-position: -2px;
+            background-size: contain;
+            width: 300px;
+            transition: width 0.5 ease-in-out;
+        }
+
+        #search:focus {
+            background-color: aquamarine;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <!-- <span class="material-symbols-outlined">
+            search
+            </span> -->
+
+        <!-- <label for="search">Search</label> -->
+        <input type="text" name="search" id="search" placeholder="Search here">
+        <br><br>
+        <label for="fname">First name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name here">
+
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name here">
+    </form>
+</body>
+
+</html>

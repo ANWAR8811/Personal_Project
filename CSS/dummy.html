@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ::selection {
+            background-color: blue;
+            color: whitesmoke;
+        }
+
+        .demo::before,
+        .demo::after {
+            content: ' ';
+            height: 20px;
+            width: 100%;
+            background: black;
+            display: inline-block;
+        }
+
+        /* .demo::after {
+            content: ' ';
+            height: 20px;
+            width: 100%;
+            background: black;
+            display: inline-block;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum fugiat ut nam ducimus unde, alias
+            eligendi perferendis magni eum eos vel dignissimos. Ex sint ullam, aperiam ut voluptatum atque
+            reprehenderit!
+            Aperiam est neque labore officiis reiciendis aut dolor, facere illo ducimus inventore quasi laudantium
+            veniam
+            sapiente laborum dolorum voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, commodi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, consectetur!</p>
+    </div>
+
+</body>
+
+</html>

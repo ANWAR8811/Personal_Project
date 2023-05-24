@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Responsive grid layout</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-columns: repeat(4, 25%); */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .grid-container>div {
+            border: 1px solid;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit veniam atque.</p>
+        </div>
+</body>
+</div>
+
+</html>
