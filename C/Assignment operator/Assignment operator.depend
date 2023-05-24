@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652353948 source:/Users/mdanwarhossain/Documents/C programming/Assignment operator/1st.c
+	<stdio.h>
+
+1652353727 source:/Users/mdanwarhossain/Documents/C programming/Assignment operator/main.c
+	<stdio.h>
+	<stdlib.h>
+

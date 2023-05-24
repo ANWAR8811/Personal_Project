@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652378954 source:/Users/mdanwarhossain/Documents/C programming/Conditional operator/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652379321 source:/Users/mdanwarhossain/Documents/C programming/Conditional operator/1st.c
+	<stdio.h>
+
