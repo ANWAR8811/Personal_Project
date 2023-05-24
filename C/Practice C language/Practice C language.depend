@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652456338 source:/Users/mdanwarhossain/Documents/C programming/Practice C language/Counting digits.c
+	<stdio.h>
+
+1652456292 source:/Users/mdanwarhossain/Documents/C programming/Practice C language/main.c
+	<stdio.h>
+	<stdlib.h>
+
