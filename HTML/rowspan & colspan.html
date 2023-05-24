@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Table designing</title>
+
+        <style>
+            table{
+                width: 600px;
+                height:400px;
+                border-collapse: collapse;
+            }
+
+            table,td,th{
+                border: 2px solid green;
+            }
+
+            tr{
+                text-align: center;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <table>
+            <caption>Student details</caption>
+            <thead>
+                <tr>
+                    <th> Id </th>
+                    <th> Name </th>
+                    <th colspan="2"> GPA </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> 101 </td>
+                    <td> Rana </td>
+                    <td rowspan="2"> 🫥  </td>
+                    <td> 🤨  </td>
+                </tr>
+
+                <tr>
+                    <td> 102 </td>
+                    <td> Anwar </td>
+                    <td> 🧐  </td>
+                </tr>
+
+                <tr>
+                    <td> 103 </td>
+                    <td> Jnina </td>
+                    <td> 👍🏻  </td>
+                    <td> 👎🏻  </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

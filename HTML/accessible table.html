@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Table accessing</title>
+    </head>
+        
+    <body>
+        <table>
+            <caption>Student details</caption>
+
+            <colgroup>
+                <col span="3" style="background-color: blanchedalmond;"
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col"> Id </th>
+                    <th scope="col"> Name </th>
+                    <th scope="col" colspan="2"> GPA </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td scope="row"> 101 </td>
+                    <td> Rana </td>
+                    <td rowspan="2"> 🫥  </td>
+                    <td> 🤨  </td>
+                </tr>
+
+                <tr>
+                    <td scope="row"> 102 </td>
+                    <td> Anwar </td>
+                    <td> 🧐  </td>
+                </tr>
+
+                <tr>
+                    <td scope="row"> 103 </td>
+                    <td> Jnina </td>
+                    <td> 👍🏻  </td>
+                    <td> 👎🏻  </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
