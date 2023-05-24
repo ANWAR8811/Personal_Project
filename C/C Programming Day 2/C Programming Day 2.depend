@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1652260759 source:/Users/mdanwarhossain/Documents/C programming/C Programming Day 2/main.c
+	<stdio.h>
+	<stdlib.h>
+

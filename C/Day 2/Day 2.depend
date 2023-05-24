@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1652265336 source:/Users/mdanwarhossain/Documents/C programming/Day 2/Input.c
+	<stdio.h>
+
+1652260901 source:/Users/mdanwarhossain/Documents/C programming/Day 2/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1652265336 source:/Users/mdanwarhossain/Documents/C programming/Day 2/Testing.c
+	<stdio.h>
+
