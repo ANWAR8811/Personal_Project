@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+</head>
+
+<body style="align-items: center;">
+    <button onclick="prev()">previous</button>
+
+    <img src="bili.jpg" alt="Nai" height="300px" width="400px">
+
+    <button onclick="next()">next</button>
+
+
+    <script>
+        var photos = ["bili.jpg", "Anime.jpg", "Anime cat.jpg"]
+        var imgTag = document.querySelector("img")
+        var c = 0
+
+        function prev() {
+            c--
+
+            if (c < 0) {
+                c = photos.length - 1
+                imgTag.src = photos[c]
+            }
+            else {
+                imgTag.src = photos[c]
+            }
+        }
+        function next() {
+            c++
+
+            if (c >= photos.length) {
+                c = 0
+                imgTag.src = photos[c]
+            }
+            else {
+                imgTag.src = photos[c]
+            }
+        }
+    </script>
+</body>
+
+</html>

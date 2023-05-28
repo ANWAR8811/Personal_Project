@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios API</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <script>
+      console.clear();
+      // console.log(window);
+
+      // axios
+      //   .put("https://jsonplaceholder.typicode.com/posts/10", {
+      //     body: JSON.stringify({
+      //       id: 10,
+      //       title: "fooma",
+      //       body: "barreak",
+      //       userId: 1,
+      //     }),
+      //   })
+      //   .then((res) => console.log(res.data))
+      //   .catch((err) => console.log(err));
+
+      const makeRequest = async (config) => {
+        return await axios(config);
+      };
+
+      // const getData = () => {
+      //   makeRequest("https://jsonplaceholder.typicode.com/posts")
+      //     .then((res) => console.log(res))
+      //     .catch((err) => console.log(err));
+      // };
+
+      // getData();
+      // const createData = () => {
+      //   makeRequest({
+      //     url: "https://jsonplaceholder.typicode.com/posts",
+      //     method: "POST",
+      //     data: JSON.stringify({
+      //       title: "foo",
+      //       body: "bar",
+      //       userId: 1,
+      //     }),
+      //   })
+      //     .then((res) => console.log(res))
+      //     .catch((err) => console.log(err));
+      // };
+
+      // createData();
+
+      // const updateData = () => {
+      //   makeRequest({
+      //     url: "https://jsonplaceholder.typicode.com/posts/1",
+      //     method: "PUT",
+      //     data: JSON.stringify({
+      //       id: 1,
+      //       title: "fooMark",
+      //       body: "barMark",
+      //       userId: 1999,
+      //     }),
+      //   })
+      //     .then((res) => console.log(res))
+      //     .catch((err) => console.log(err));
+      // };
+
+      // updateData();
+
+      const deleteData = () => {
+        makeRequest({
+          url: "https://jsonplaceholder.typicode.com/posts/1",
+          method: "DELETE",
+        })
+          .then((res) => console.log(res.data))
+          .catch((err) => console.log(err));
+      };
+
+      deleteData();
+    </script>
+  </body>
+</html>

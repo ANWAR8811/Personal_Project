@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video width="500px" height="350px" controls muted>
+        <source src="Audio/keybord.mp4" type="video/mp4">
+        Your browser does not support videos
+    </video>
+
+    <script>
+        let video = document.querySelector('video')
+
+        video.addEventListener('canplay', function () {
+            console.log('canplay')
+        })
+        video.addEventListener('play', function () {
+            console.log('play')
+        })
+        video.addEventListener('playing', function () {
+            console.log('playing')
+        })
+        video.addEventListener('pause', function () {
+            console.log('pause')
+        })
+        video.addEventListener('ended', function () {
+            console.log('Thanks for watching')
+        })
+        video.addEventListener('volumechange', function () {
+            console.log('volumechange')
+        })
+    </script>
+</body>
+
+</html>

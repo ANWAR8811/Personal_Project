@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .btn {
+            width: 100px;
+            height: 60px;
+            margin: 20px;
+        }
+
+        .anim {
+            box-shadow: 0 15px 18px 0 aquamarine;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn a">a</button>
+    <button class="btn b">b</button>
+    <button class="btn c">c</button>
+
+    <script>
+        for (var i = 0; i < 3; i++) {
+            document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+                var text = this.innerHTML
+                // bacAudio(text)
+                // bacAnim(text)
+            })
+        }
+
+        // function bacAudio(text) {
+        //     switch (text) {
+        //         case "a":
+        //             var audio = new Audio('Audio/Far From Love.mp3');
+        //             audio.play();
+        //             break
+        //         case "b":
+        //             var audio = new Audio('Audio/The Drum.mp3');
+        //             audio.play();
+        //             break
+        //         case "c":
+        //             var audio = new Audio('Audio/Bells in Santa Fe.mp3');
+        //             audio.play();
+        //             break
+        //     }
+        // }
+
+        document.addEventListener("keypress", function (event) {
+            var text = event.key
+            bacAudio(text)
+            bacAnim(text)
+        })
+
+        function bacAudio(text) {
+            var audio;
+
+            switch (text) {
+                case "a":
+                    audio = new Audio('Audio/Far From Love.mp3');
+                    break;
+                case "b":
+                    audio = new Audio('Audio/The Drum.mp3');
+                    break;
+                case "c":
+                    audio = new Audio('Audio/Bells in Santa Fe.mp3');
+                    break;
+            }
+
+            audio.play();
+
+            setTimeout(function () {
+                audio.pause();
+            }, 5000);
+        }
+
+
+        function bacAnim(text) {
+            var slb = document.querySelector("." + text)
+            slb.classList.add("anim")
+
+            setTimeout(function () {
+                slb.classList.remove("anim")
+            }, 1000)
+        }
+
+
+    </script>
+</body>
+
+</html>

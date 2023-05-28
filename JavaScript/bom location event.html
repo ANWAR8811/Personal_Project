@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <div class="location-div">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <button id="visit-button">visit my website</button>
+
+
+    <script>
+        console.clear();
+        // console.log(window)
+
+        // console.log(location)
+
+        // console.log(location.href);
+        // console.log(location.protocol)
+        // console.log(location.hostname);
+        // console.log(location.port);
+        // console.log(location.pathname);
+
+        var licationDiv = document.querySelector(".location-div");
+
+        var p1 = licationDiv.children[0];
+        p1.textContent = location.href;
+
+        var p2 = licationDiv.children[1];
+        p2.textContent = location.href;
+              
+        var p3 = licationDiv.children[2];
+        p3.textContent = location.protocol;
+
+        var p4 = licationDiv.children[3];
+        p4.textContent = location.pathname;
+
+        var p5 = licationDiv.children[4];
+        p5.textContent = location.port;
+
+        var p6 = licationDiv.children[5];
+        p6.textContent = location.hostname;
+
+        var p7 = licationDiv.children[6];
+        p7.textContent = location.search;
+
+        const visitButton = document.getElementById("visit-button");
+
+        visitButton.addEventListener("click", function() {
+            location.assign("https://www.google.com/");
+        })
+    </script>
+</body>
+</html>

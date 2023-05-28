@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+</head>
+<body>
+    
+
+    <canvas id="myCanvas" width="400px" height="300px"></canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas');
+
+        var ctx = c.getContext('2d');
+
+        ctx.strokeStyle = 'black'
+        ctx.strokeRect(20, 20, 450, 350);
+
+        ctx.fillStyle = 'aqua';
+        ctx.fillRect(22, 22, 452, 352);
+
+        
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="400px"></canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext('2d');
+
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'black';
+        ctx.strokeRect(20, 20, 460, 360);
+
+        ctx.fillStyle = 'aqua';
+        ctx.fillRect(22, 22, 456, 356);
+
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, 90, 0, 2*Math.PI, false); // Corrected Math.PI
+        ctx.fillStyle = 'green';
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>
+

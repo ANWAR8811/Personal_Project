@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+    <style>
+        .st {
+            color: blue;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button>click</button> -->
+
+    <h1>What is this</h1>
+
+    <script>
+        // var cl = document.querySelector("button").addEventListener("click", func)
+
+        // function func() {
+        //     alert('Hello')
+        // }
+
+        // var cl = document.querySelector("button").addEventListener("click", function func() {
+        //     alert('Hello')
+        // })
+
+        var mo = document.querySelector("h1")
+        mo.addEventListener("mouseover", function () {
+            mo.classList.add("st")
+        })
+
+        mo.addEventListener("mouseout", function () {
+            mo.classList.remove("st")
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing CSS style</title>
+
+    <style>
+        .para-style {
+            color: blue;
+            background-color: aqua;
+            font-size: 3rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para">This is a pen</p>
+
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button>
+
+    <script>
+        function addStyle() {
+            var v = document.querySelector("#para")
+            v.classList.add("para-style")
+        }
+        function removeStyle() {
+            var v = document.querySelector("#para")
+            v.classList.remove("para-style")
+        }
+    </script>
+</body>
+
+</html>

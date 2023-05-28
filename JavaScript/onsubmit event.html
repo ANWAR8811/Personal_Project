@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name: <input type="text" id="name" name="name" required autofocus></label>
+        </div>
+        <div>
+            <label for="email">Email: <input type="email" id="email" name="email" size="30" required></label>
+        </div>
+        <div>
+            <label for="password">Password: <input type="password" id="password" name="password" required minlength="4"
+                    maxlength="16"></label>
+        </div>
+
+        <div>
+            <input type="submit" value="signup">
+        </div>
+
+    </form>
+
+
+    <script>
+        const Form = document.querySelector('form')
+        const name = Form.querySelector('div #name')
+        const email = Form.querySelector('div #email')
+        const password = Form.querySelector('div #password')
+        // console.log(name)
+
+        Form.addEventListener('submit', submitHandler)
+
+        function submitHandler(e) {
+            e.preventDefault()
+            // console.log('submit')
+            // console.log(name.value)
+            // console.log(email.value)
+            // console.log(password.value)
+
+            const userInfo = {
+                name: name.value,
+                email: email.value,
+                password: password.value
+            }
+
+            console.log(userInfo)
+
+            name.value = ''
+            email.value = ''
+            password.value = ''
+        }
+    </script>
+</body>
+
+</html>

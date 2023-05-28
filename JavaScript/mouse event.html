@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+
+    <style>
+        div {
+            background-color: aquamarine;
+            height: 20rem;
+            width: 20rem;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-div" , id="div1">
+        <p>Hey there, how are you</p>
+
+        <button class="btn">btn1</button>
+        <button class="btn">btn2</button>
+        <button class="btn">btn3</button>
+    </div>
+
+
+
+    <script>
+        console.clear()
+        // const div = document.querySelector('div')
+
+        // div.addEventListener('click', function (e) {
+        //     // console.log('click is occured')
+        //     // console.log(e.target)
+        //     // console.log(e.target.id)
+        //     // console.log(e.target.className)
+        //     // console.log(e.target.innerHTML)
+        //     console.log(e.target.textContent)
+        // })
+
+        // div.addEventListener('dblclick', function () {
+        //     console.log('dblclick is occured')
+        // })
+        // div.addEventListener('mousedown', function () {
+        //     console.log('mousedown is occured')
+        // })
+        // div.addEventListener('mouseup', function () {
+        //     console.log('mouseup is occured')
+        // })
+        // div.addEventListener('mouseover', function () {
+        //     console.log('mouseover is occured')
+        // })
+        // // div.addEventListener('mousemove', function (e) {
+        // //     console.log('ClientX: ' + e.clientX, 'ClientY: ' + e.clientY)
+        // // })
+        // div.addEventListener('mousemove', function (e) {
+        //     console.log('offsetX: ' + e.offsetX, 'offsetY: ' + e.offsetY)
+        // })
+
+        const buttons = document.querySelectorAll('.btn')
+        // console.log('buttons')
+
+        Array.from(buttons).map((button) => {
+            button.addEventListener('click', function (e) {
+                // console.log('clicked')
+                console.log(e.target.innerText)
+            })
+        })
+    </script>
+</body>
+
+</html>

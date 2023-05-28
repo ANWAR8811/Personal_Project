@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Enter a number between 5 to 10</p>
+    <input type="text" id="numTextfield" />
+    <button id="checkButton">check</button>
+
+    <script>
+      document.querySelector("#checkButton").addEventListener("click", function() {
+          var num = document.querySelector("numTextfield").value;
+          console.log(num);
+
+          try{
+              if (num < 5) {
+                  throw new Error("Number is too small");
+              }
+              else if (num > 10) {
+                  throw new Error("Number is too big");
+          }
+          }
+          catch(e) {
+              console.log(e.message);
+              }
+              });
+    </script>
+  </body>
+</html>

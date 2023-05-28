@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="alert('Hey')">click me</button> -->
+    <!-- <button onclick="massage()">click me</button> -->
+
+    <button onclick="pic1()">Cat</button>
+    <button onclick="pic2()">Anime cat</button>
+
+    <!-- <p id="para">This is paragraph</p> -->
+
+    <br>
+    <img id="cat" src="#" alt="Nai" height="300px" width="400px">
+
+    <script>
+        // function massage() {
+        //     alert('Hello everyone')
+        // }
+
+        // function massage() {
+        //     var sel = document.querySelector("#para")
+        //     sel.innerHTML = "You have selected butthon 1"
+        // }
+
+        var imageCat = document.querySelector("#cat")
+        function pic1() {
+            imageCat.src = "bili.jpg"
+        }
+        function pic2() {
+            imageCat.src = "Anime cat.jpg"
+        }
+    </script>
+</body>
+
+</html>

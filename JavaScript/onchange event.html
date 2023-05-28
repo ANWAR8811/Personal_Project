@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange Event</title>
+</head>
+
+<body>
+    <!-- <label for="name">
+        Name: <input type="text" name="name" class="name-inp", id="name-inp">
+    </label> -->
+
+    <!-- <div>
+        <h3>Programming language</h3>
+
+        <label for="pgrm">
+            <input type="checkbox" name="pgrm" id="" value="c">C
+        </label>
+        <label for="pgrm">
+            <input type="checkbox" name="pgrm" id="" value="java">Java
+        </label>
+    </div> -->
+
+    <label for="department">Department: </label>
+    <select name="department" id="department">
+        <option value="cse">cse</option>
+        <option value="eee">eee</option>
+        <option value="llb">llb</option>
+    </select>
+
+
+    <script>
+        // const inp = document.querySelector('input[name=name]')
+        // // console.log(inp)
+
+        // inp.addEventListener('change', changeHandler)
+
+        // function changeHandler(e) {
+        //     console.log(e)
+        //     console.log(e.type)
+        //     console.log(e.target)
+        // }
+
+        // const programs = document.querySelectorAll('input[name=pgrm]')
+
+        // Array.from(programs).map((pgrm) => {
+        //     pgrm.addEventListener('change', pgrmHandler)
+        // })
+
+        // function pgrmHandler(e) {
+        //     if (e.target.checked) {
+        //         // console.log('checked')
+        //         console.log(e.target.value)
+        //     }
+        // }
+
+        const department = document.querySelector('#department')
+
+        department.addEventListener('change', handledepartment)
+
+        function handledepartment(e) {
+            // console.log('selected')
+            console.log(e.target.value)
+        }
+    </script>
+</body>
+
+</html>

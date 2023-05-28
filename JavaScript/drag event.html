@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1 {
+            width: 500px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+
+    <p id="drag1" draggable="true">Hi I am Rana</p>
+
+    <script>
+        const div1 = document.querySelector('div1');
+        const p = document.querySelector('p');
+
+        p.addEventListener('dragstart', function (e) {
+            e.dataTransfer.setData('Text', e.target.id);
+        });
+
+        div.addEventListener('dragover', function (e) {
+            e.preventDefault();
+        });
+
+        div.addEventListener('drop', function (e) {
+            let id = e.dataTransfer.getData('Text');
+            div.appendChild(document.getElementById(id));
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1 {
+            width: 500px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+
+    <p id="drag1" draggable="true">Hi I am Rana</p>
+
+    <script>
+        const div1 = document.querySelector('#div1'); // Added '#' to select by ID
+        const p = document.querySelector('#drag1'); // Added '#' to select by ID
+
+        p.addEventListener('dragstart', function (e) {
+            e.dataTransfer.setData('text/plain', e.target.id); // Modified 'Text' to 'text/plain'
+        });
+
+        div1.addEventListener('dragover', function (e) { // Changed 'div' to 'div1'
+            e.preventDefault();
+        });
+
+        div1.addEventListener('drop', function (e) { // Changed 'div' to 'div1'
+            let id = e.dataTransfer.getData('text/plain'); // Modified 'Text' to 'text/plain'
+            div1.appendChild(document.getElementById(id));
+        });
+    </script>
+</body>
+
+</html>

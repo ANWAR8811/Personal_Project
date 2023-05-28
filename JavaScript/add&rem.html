@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <a href="#">Visit Google</a>
+
+    <div id="my-div" style="background-color: aquamarine;">
+        <h1>Bangladesh</h1>
+        <h1>Norway</h1>
+    </div>
+
+
+    <script>
+        var new_head = document.createElement("h1")
+        var text = document.createTextNode("Russia")
+
+        new_head.appendChild(text)
+
+        var Div = document.querySelector("#my-div")
+        Div.appendChild(new_head)
+
+        // var head2 = document.querySelector("h1")[1]
+        // Div.removeChild(head2)
+
+        // var head2 = document.getElementsByTagName("h1")[1]
+        // Div.removeChild(head2)
+
+        var new_head0 = document.createElement("h1")
+        var text0 = document.createTextNode("Canada")
+        new_head0.appendChild(text0)
+        var head0 = document.getElementsByTagName("h1")[0]
+        Div.insertBefore(new_head0, head0)
+    </script>
+</body>
+
+</html>

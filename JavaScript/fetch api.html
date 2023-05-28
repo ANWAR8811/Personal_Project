@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // console.clear();
+    // fetch("https://jsonplaceholder.typicode.com/posts/1", {
+    //   method: "PUT",
+    //   headers: {
+    //     'Content-type': 'application/json; charset=UTF-8',
+    //   },
+    //   body: JSON.stringify({
+    //     id: 1,
+    //     title: 'fooMail',
+    //     body: 'barMail',
+    //     userId: 1,
+    //   })
+    // })
+
+    //   .then((res) => {
+    //     if (!res.ok) {
+    //       const message = `Error: ${res.status}`
+    //       throw new Error(message);
+    //     }
+    //     return res.json();
+    //   })
+    //   .then((response) => console.log(response))
+    //   .catch((err) => console.log(err));
+
+
+    const makeRequest = async (url, config) => {
+      const res = await fetch(url, config)
+      if (!res.ok) {
+        const message = `Error: ${res.status}`
+        throw new Error(message);
+      }
+
+      const data = await res.json()
+      return data
+    }
+
+    // const setData = () => {
+    //   makeRequest('https://jsonplaceholder.typicode.com/posts', {
+    //     method: 'POST',
+    //     body: JSON.stringify({
+    //       title: 'foo',
+    //       body: 'bar',
+    //       userId: 1,
+    //     }),
+    //     headers: {
+    //       'Content-type': 'application/json; charset=UTF-8',
+    //     }
+    //   }
+    //   ).
+    //     then((res) => console.log(res)).catch((err) => console.log(err))
+    // }
+
+    // setData()
+
+
+
+    const updateData = () => {
+      makeRequest('https://jsonplaceholder.typicode.com/posts/1', {
+        method: 'PUT',
+        body: JSON.stringify({
+          id: 1,
+          title: 'fooMail',
+          body: 'baMrdsf',
+          userId: 1,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        }
+      }
+      ).
+        then((res) => console.log(res)).catch((err) => console.log(err))
+    }
+
+    updateData()
+
+  </script>
+</body>
+
+</html>

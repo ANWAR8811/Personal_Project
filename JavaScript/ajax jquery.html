@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax jquery</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <script>
+      console.clear();
+      //   console.log(window);
+
+      const makeRequest = async (url, method, data) => {
+        try {
+          const result = await $.ajax({
+            url: url,
+            method: method,
+            data: data,
+          });
+          return result;
+        } catch (err) {
+          console.log(err);
+        }
+      };
+
+      //   const getData = () => {
+      //     makeRequest("https://jsonplaceholder.typicode.com/posts/1", "GET").then(
+      //       (res) => console.log(res)
+      //     );
+      //   };
+
+      //   getData();
+
+      //   const createData = () => {
+      //     makeRequest("https://jsonplaceholder.typicode.com/posts", "POST", {
+      //       title: "foo",
+      //       body: "bar",
+      //       userId: 1,
+      //     }).then((res) => console.log(res));
+      //   };
+
+      //   createData();
+
+      const deleteData = () => {
+        makeRequest(
+          "https://jsonplaceholder.typicode.com/posts/1",
+          "DELETE",
+          {}
+        ).then((res) => console.log(res));
+      };
+
+      deleteData();
+    </script>
+  </body>
+</html>
