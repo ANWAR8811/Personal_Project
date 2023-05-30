@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: cadetblue;
+  padding: 1rem;
+  min-height: 80vh;
+  width: 45%;
+  overflow: scroll;
+  border-radius: 1rem;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  width: 85%;
+  /* align-items: center; */
+}
+
+.btn {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  background-color: greenyellow;
+  color: black;
+  transition: all 0.35;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#addTodoButton {
+  width: 14%;
+}
+
+.li-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  transition: all 0.35s;
+}
+
+.li-style:hover {
+  background-color: rgb(197, 189, 189);
+}
+
+.bg-success {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: rgb(127, 146, 127);
+  color: black;
+  border-left: 6px solid rgb(231, 235, 6);
+}
+.bg-danger {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: rgb(210, 169, 180);
+  color: black;
+  border-left: 6px solid rgb(235, 6, 6);
+}

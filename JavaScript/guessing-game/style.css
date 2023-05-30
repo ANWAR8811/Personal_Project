@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@100;400&family=Nunito:wght@400;500;700;900&family=Playfair+Display:ital@1&family=Poppins&family=Roboto:wght@300;400&display=swap");
+
+/* reset code starts here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "nunito", "sans-serif";
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 400;
+}
+/* reset code ends here */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ami thik kortesi */
+  /* margin-bottom: 900px; */
+}
+
+.card {
+  width: 32rem;
+  height: 20rem;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  color: black;
+  box-shadow: 0.1rem 0.1rem 0.1rem #201616, -0.1rem 0 0.1rem #1b1313;
+  font-size: 1.2rem;
+  background-color: aquamarine;
+  transition: all 0.3s;
+
+  /* chatGpt suggestions */
+  margin-bottom: 15vh;
+  /* width: 70vw;
+  height: 60vh; */
+}
+
+.card:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem #0a0707, -0.2rem 0 0.2rem #201616;
+  /* box-shadow: 0.2rem 0.2rem 0.2rem #f1ca08, -0.2rem 0 0.2rem #dbdf05; */
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  background-color: rgb(221, 226, 218);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 45%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0.4rem 1rem 0;
+}
+
+.btn {
+  border: none;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  background-color: rgb(213, 224, 227);
+  cursor: pointer;
+  transition: all 0.35s;
+  font-size: 1.2rem;
+}
+
+/* chatgpt suggestions starts */
+/* .form-field {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  border: none;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  background-color: rgb(221, 226, 218);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 70%;
+  box-sizing: border-box; 
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  border: none;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  background-color: rgb(213, 224, 227);
+  cursor: pointer;
+  transition: all 0.35;
+  font-size: 1.2rem;
+} */
+
+/* chatgpt suggestions ends */
+
+.btn:hover {
+  background-color: azure;
+}
+
+.p {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+/* .large-text {
+  font-size: 3rem;
+  text-align: center;
+} */
+.large-text {
+  font-size: 3rem;
+  text-align: center; /* Add this line to center-align the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* .middle-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* chatgpt suggestions Starts */
+
+.resultText {
+  text-align: center;
+}
+
+.remainingAttempts {
+  text-align: center;
+}
+
+.lostWonMessage {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  text-align: center;
+}
+
+/* chatgpt suggestions ends */
