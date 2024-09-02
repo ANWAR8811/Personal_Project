@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits List</title>
+  </head>
+  <body>
+    <ul id="fruits-list">
+      <!-- List items will be dynamically added here -->
+    </ul>
+
+    <script>
+      // JavaScript code
+      const fruits = ["mango", "banana", "orange", "lemon"];
+
+      let fLen = fruits.length;
+      let text = ""; // Initialize an empty string
+
+      // Loop through the array and build the list
+      for (let i = 0; i < fLen; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+
+      // Select the <ul> element by its ID and set its innerHTML to the generated list
+      document.getElementById("fruits-list").innerHTML = text;
+    </script>
+  </body>
+</html>
