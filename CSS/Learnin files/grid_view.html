@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid view</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        background-color: rgb(120, 154, 161);
+        padding: 1% 5%;
+        text-align: center;
+        height: 100px;
+        font-size: 2.4rem;
+      }
+
+      .nav_menu {
+        background-color: rgb(145, 140, 111);
+        padding: 1% 5%;
+      }
+
+      .nav_menu a {
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+      }
+
+      .main {
+        padding: 1% 5%;
+        background-color: bisque;
+      }
+
+      .aside {
+        padding: 1% 5%;
+        background-color: rgb(191, 160, 122);
+        text-align: center;
+      }
+
+      .footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+
+      /* for mobile */
+      [class*="col-"] {
+        width: 100%;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+
+      /* clearing container float */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      @media screen and (min-width: 600px) {
+        /* for tablet */
+        .col-s-1 {
+          width: 8.33%;
+        }
+        .col-s-2 {
+          width: 16.66%;
+        }
+        .col-s-3 {
+          width: 25%;
+        }
+        .col-s-4 {
+          width: 33.33%;
+        }
+        .col-s-5 {
+          width: 41.66%;
+        }
+        .col-s-6 {
+          width: 50%;
+        }
+        .col-s-7 {
+          width: 58.33%;
+        }
+        .col-s-8 {
+          width: 66.66%;
+        }
+        .col-s-9 {
+          width: 75%;
+        }
+        .col-s-10 {
+          width: 83.33%;
+        }
+        .col-s-11 {
+          width: 91.66%;
+        }
+        .col-s-12 {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        /* for desktop */
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+        .col-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Anwar Hossain</div>
+
+    <div class="row">
+      <div class="nav_menu col-2 col-s-3">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Contact me</a>
+      </div>
+
+      <div class="main col-7 col-s-8">
+        <h1>I am a student</h1>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+          tempore!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+          illo reiciendis animi libero id aliquid numquam iusto quis excepturi
+          quod culpa quaerat, velit iure non laborum consequatur, possimus
+          quidem soluta fugiat. Iusto ipsam esse ex suscipit eaque temporibus
+          numquam, repudiandae odio sequi ut quam dignissimos quo similique
+          doloribus quibusdam impedit quos aut accusamus totam minima facilis!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem tempora distinctio in a! Unde alias, maxime
+          exercitationem iste perferendis porro eveniet veniam commodi dolor
+          asperiores nisi fuga numquam. Temporibus veniam earum quo rem tempora
+          atque, aperiam ad accusamus expedita illo magnam quisquam distinctio
+          cum commodi qui sunt error mollitia nam. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Ex culpa quidem velit maiores
+          reprehenderit quos facere ducimus impedit consequuntur dolorum esse
+          delectus, quod dignissimos nostrum recusandae dolore, pariatur atque
+          quaerat.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, fuga
+          neque quisquam, delectus ipsa temporibus tenetur expedita maiores
+          velit fugiat minus officia minima eius saepe eos molestias quaerat
+          magni voluptates! Ipsa, quis asperiores ullam corporis adipisci fugit
+          rem, quidem neque odit ad cum delectus quisquam quas ab dolorem. Quae,
+          atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          nesciunt quidem minima cupiditate rerum qui enim voluptatum ratione
+          dolorem nobis! Consectetur dicta provident explicabo! Totam
+          consequatur inventore perferendis. Earum, laboriosam. Aliquam aperiam
+          exercitationem, consequatur voluptates non ducimus? Sit eligendi
+          architecto facere iste minima aut tenetur nemo natus vitae, animi hic
+          aliquam nulla similique odit maiores, quis mollitia fugiat facilis
+          atque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aliquid praesentium, labore temporibus voluptates deserunt, esse
+          laudantium ut nostrum similique odit ratione. Mollitia minima in est
+          expedita delectus corporis cupiditate laborum laboriosam? Corporis,
+          ipsa temporibus impedit quaerat voluptatem iure id quidem?
+        </p>
+      </div>
+
+      <div class="aside col-3 col-s-12">
+        <h2>What i love?</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Perspiciatis, placeat.
+        </p>
+        <h2>What i do?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit id
+          fugit eum!
+        </p>
+        <h2>What i don't love?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a vel
+          eaque culpa quos?
+        </p>
+        <h2>What i don't do?</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam et
+          cupiditate atque!
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">&copy; Rana Ahamed 2024. Developed by 8811.</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navigation</title>
+
+    <style>
+      .menu {
+        background-color: bisque;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .menu a {
+        text-decoration: none;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .menu {
+          flex-direction: column;
+        }
+
+        .menu a {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Mail</a>
+      <a href="#">About me</a>
+      <a href="#">Tutorial</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+parcentage can be used in fontsize like 123% or 340%
+
+class can be used any number of times but id can be used only once
+
+to select any element or tag in any div or section we have to start from div id or class to desired elements id or class using h1 separated
+
+can be used many classes in the same tag where classes will be separated by spaces
+
+grouping selector can be used to use the same desing in neccessary tags separated by comma
+
+descendent selector  --> used by tags (like div p)
+
+child selector  --> used by '>' symbol (like div > p)
+
+adjacency sibling selector --> used by '+' symbol (like div + p)
+
+adjacency sibling general selector --> used by '~' symbol (like div ~ p)
+
+'color zilla' chrom extension for choosing color from anywhere in the website
+
+justify means it takes equal spaces from both sides of the text
+
+unicode-table.com web for emojis
+
+every elements works like a box --> box model
+
+block line element --> h1...h6, div  more in w3school web can be used as inline element using display keyword (like display:inline)
+
+in line element --> span  more in w3school web
+
+max-width is better than width
+
+pseudo class --> have to use ':' like (a:hover), first of type, last of type
+
+pseudo element --> have to use '::' like (p::first child), ::selection, 
+
+Specificity Hierarchy
+    Inline styles - Example: <h1 style="color: pink;">
+    IDs - Example: #navbar
+    Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+    Elements and pseudo-elements - Example: h1, ::before
+
+    /* specificity calculator */ 
+        /* a=number of  id */
+        /* b=number of class, pseduo classes, attributes.*/
+        /* c=number of elements, pesudo elements */
+
+        calculator = abr; (bigger is better)
+
+box-sizing --> set the width fixed doesn't add more width (same goes for height)
+
+after using floating element --> float: left, float: right, the div should be cleared to work other elements properly
+    
+static positioning means normal positioning
+
+overflow and tooltip
+
+z index --> used to determine stack ordering of elements like div
+
+z index only works on positioning (default z index is 0)
+
+the element which has bigger z index will show first (it can be negative also)
+
+justify content helps to allign flex item (means those items which are inside flex container)
+
+to allign content in the center of the div justify content and allign items both should be set as center
+
+flex box layout --> 1 dimensional desing
+
+grid layout --> 2 dimensional desing
+
+display property is better than visibility property
+
+default flex direction --> row direction
+

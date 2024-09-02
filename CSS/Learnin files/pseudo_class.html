@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class</title>
+
+    <style>
+      a:hover {
+        color: red;
+      }
+
+      a.link:hover {
+        color: rgb(10, 189, 114);
+      }
+
+      input:focus {
+        padding: 200px;
+        font-size: 2.5rem;
+        background-color: gray;
+      }
+
+      table,
+      tr,
+      td {
+        border: 1px solid green;
+      }
+
+      tr:nth-child(odd) {
+        background-color: gray;
+      }
+
+      p::first-letter {
+        color: red;
+        font-style: bold;
+        font-size: 3.5rem;
+      }
+
+      p::after {
+        content: "||||||||||";
+      }
+
+      p::before {
+        content: "<<<<<<";
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Tutorial</a>
+    <a class="link" href="#">Hoco</a>
+    <br /><br />
+    <input type="text" placeholder="Enter your name" />
+
+    <br /><br />
+
+    <table>
+      <tr>
+        <td>ami</td>
+        <td>tmi</td>
+        <td>she</td>
+      </tr>
+      <tr>
+        <td>jni</td>
+        <td>na</td>
+        <td>k</td>
+      </tr>
+      <tr>
+        <td>vlo</td>
+        <td>asi</td>
+        <td>vai</td>
+      </tr>
+    </table>
+
+    <p>ami vat khai tmi bari jao</p>
+  </body>
+</html>

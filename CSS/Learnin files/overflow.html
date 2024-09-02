@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlfow and tooltip</title>
+
+    <style>
+      div {
+        height: 100px;
+        width: 250px;
+        background-color: gray;
+        border: 3px solid green;
+        overflow: auto;
+      }
+
+      .tooltip {
+        position: relative;
+      }
+      .tooltip .tooltip-text {
+        width: 150px;
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+
+        visibility: hidden;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="tooltip">
+      Ami
+      <span class="tooltip-text">Ami hala gorib</span>
+    </a>
+
+    <br /><br /><br />
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta neque ex
+      impedit. Rem, sint quo? Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. Veniam provident unde vero repellendus, pariatur beatae
+      praesentium quasi incidunt officia minus doloribus fuga vitae ducimus
+      iusto harum eveniet cupiditate voluptatum laboriosam.
+    </div>
+  </body>
+</html>

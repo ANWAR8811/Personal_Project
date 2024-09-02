@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        background-color: bisque;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+
+        /* transition-property: width;
+        transition-duration: 3s; */
+
+        transition: width 2s, height 5s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        transition: font-size 3s, transition 5s;
+      }
+
+      h1:hover {
+        font-size: 4rem;
+        transform: rotate(-45deg);
+      }
+      .main:hover {
+        width: 400px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"><h1>Bangladesh</h1></div>
+  </body>
+</html>

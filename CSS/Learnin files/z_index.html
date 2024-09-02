@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z index and cs3 variables</title>
+
+    <style>
+      /* cs3 variable */
+      :root {
+        --primary-color: green;
+        --secondary-color: rgb(0, 6, 128);
+      }
+      div {
+        height: 250px;
+        width: 250px;
+      }
+
+      .div1 {
+        background-color: var(--primary-color);
+        position: absolute;
+      }
+
+      .div2 {
+        /* fallback color added */
+        background-color: var(--secondary-color, yellow);
+        position: absolute;
+        top: 150px;
+        left: 150px;
+      }
+
+      @media screen and (max-width: 768px) {
+        :root {
+          --primary-color: black;
+          --secondary-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>

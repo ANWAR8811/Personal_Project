@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseduo again</title>
+
+    <style>
+      .demo p:hover:nth-child(2) {
+        background: black;
+        color: white;
+      }
+
+      ::selection {
+        color: red;
+      }
+
+      /* .demo::before {
+        content: "";
+        width: 50%;
+        height: 25px;
+        background: black;
+        display: inline-block;
+      }
+      .demo::after {
+          content: "";
+          width: 50%;
+          height: 25px;
+          background: black;
+          display: inline-block;
+        } */
+      .demo::before,
+      .demo::after {
+        content: "";
+        width: 50%;
+        height: 25px;
+        background: black;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Exercitationem, corporis.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Exercitationem, corporis.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Exercitationem, corporis.
+      </p>
+    </div>
+  </body>
+</html>

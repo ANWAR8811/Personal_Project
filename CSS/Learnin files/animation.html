@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      img {
+        max-width: 200px;
+        height: auto;
+        border: 2px solid black;
+
+        display: block;
+        margin: 0 auto;
+        margin-top: 200px;
+
+        position: relative;
+        animation-name: img-anim;
+        animation-duration: 3s;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes img-anim {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        50% {
+          top: 100px;
+          left: 0;
+
+          opacity: 0.5;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+
+      /* img:hover {
+        animation-name: img-anim;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      } */
+
+      /* @keyframes img-anim {
+        from {
+          max-width: 200px;
+        }
+
+        to {
+          max-width: 400px;
+
+          transform: rotate(720deg);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=612x612&w=0&k=20&c=J3ht-bKADmsXvF6gFIleRtfJ6NGhXnfIsrwlsUF8w80="
+      alt=""
+    />
+  </body>
+</html>

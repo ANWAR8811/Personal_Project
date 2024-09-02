@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+
+      th {
+        background-color: bisque;
+        height: 30px;
+      }
+
+      tr:nth-child(even) {
+        background-color: aquamarine;
+      }
+      tr:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      tr:hover {
+        background-color: rgb(234, 196, 196);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Student Details
+      </caption>
+
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>CGPA</th>
+        <th>Phone</th>
+        <th>Bio</th>
+      </tr>
+
+      <tr>
+        <td>101</td>
+        <td>Bot</td>
+        <td>9.9</td>
+        <td>017....</td>
+        <td>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          excepturi?
+        </td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Anime</td>
+        <td>9.6</td>
+        <td>017....</td>
+        <td>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          excepturi?
+        </td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Gun</td>
+        <td>6.9</td>
+        <td>017....</td>
+        <td>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          excepturi?
+        </td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Hoco</td>
+        <td>5.9</td>
+        <td>017....</td>
+        <td>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          excepturi?
+        </td>
+      </tr>
+      <tr>
+        <td>105</td>
+        <td>Joco</td>
+        <td>4.9</td>
+        <td>017....</td>
+        <td>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          excepturi?
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
