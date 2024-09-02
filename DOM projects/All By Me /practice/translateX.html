@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: transform 0.5s;
+      }
+      .box.move-right {
+        transform: translateX(100px);
+      }
+
+      .box.move-right-px {
+        transform: translateX(200px); /* Moves 200 pixels to the right */
+      }
+
+      .box.move-right-percent {
+        transform: translateX(50%); /* Moves 50% of its width to the right */
+      }
+
+      .box.move-right-vw {
+        transform: translateX(
+          10vw
+        ); /* Moves 10% of the viewport width to the right */
+      }
+    </style>
+    <title>translateX Example</title>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button onclick="moveBox()">Move Box</button>
+
+    <script>
+      function moveBox() {
+        // document.querySelector(".box").classList.toggle("move-right");
+        // document.querySelector(".box").classList.toggle("move-right-px");
+
+        // document.querySelector(".box").classList.toggle("move-right-percent");
+        document.querySelector(".box").classList.toggle("move-right-vw");
+      }
+    </script>
+  </body>
+</html>

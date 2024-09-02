@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color picker web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- display section starts here -->
+      <section class="section">
+        <div class="section-header">
+          <h3 class="section-title">Display Color</h3>
+
+          <button class="section-header-action" id="generate-random-color">
+            Random Color
+          </button>
+        </div>
+
+        <div class="divider"></div>
+        <div class="color-display" id="color-display"></div>
+      </section>
+      <!-- display section ends here -->
+
+      <!-- change and copy color section starts here -->
+
+      <section class="section">
+        <section class="section-header">
+          <h3>Change & Copy Color</h3>
+          <button class="section-header-action" id="copy-to-clipboard">
+            Copy To Clipboard
+          </button>
+        </section>
+        <div class="divider"></div>
+
+        <!-- select copy mode starts here -->
+        <div class="select-copy-mode">
+          <p class="lead">Select Copy Mode</p>
+
+          <div class="mode-radio-group">
+            <div class="mode-input-group">
+              <input
+                type="radio"
+                name="color-mode"
+                value="hex"
+                id="color-mode-hex"
+                checked
+              />
+              <label for="color-mode-hex">Hex</label>
+            </div>
+
+            <div class="mode-input-group">
+              <input
+                type="radio"
+                name="color-mode"
+                value="rgb"
+                id="color-mode-rgb"
+              />
+              <label for="color-mode-rgb">RGB</label>
+            </div>
+          </div>
+        </div>
+        <!-- select copy mode ends here -->
+
+        <!-- selected color mode input starts here  -->
+        <div class="selected-color-code">
+          <div class="hex-input-group">
+            <label for="input-hex" class="lead">Hex</label>
+
+            <input
+              type="text"
+              placeholder="dddeee"
+              id="input-hex"
+              class="text-input hex-input"
+            />
+            <div class="hex-icon">#</div>
+          </div>
+
+          <div class="rgb-input-group">
+            <label for="input-rgb" class="lead">RGB</label>
+
+            <input
+              type="text"
+              placeholder="rgb(221, 222, 238)"
+              id="input-rgb"
+              class="text-input rgb-input"
+              disabled
+            />
+          </div>
+        </div>
+        <!-- selected color mode input ends here  -->
+
+        <!-- color sliders starts here -->
+        <div class="color-sliders">
+          <p class="laed">Adjust RGB Colors</p>
+
+          <div class="color-sliders-group">
+            <div>
+              <div class="slider-label-group">
+                <p>Red</p>
+
+                <p class="color-slider-red-label">221</p>
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="255"
+                value="221"
+                class="color-slider"
+                id="color-slider-red"
+              />
+            </div>
+            <div>
+              <div class="slider-label-group">
+                <p>Green</p>
+
+                <p class="color-slider-green-label">222</p>
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="255"
+                value="222"
+                class="color-slider"
+                id="color-slider-green"
+              />
+            </div>
+            <div>
+              <div class="slider-label-group">
+                <p>Blue</p>
+
+                <p class="color-slider-blue-label">238</p>
+              </div>
+
+              <input
+                type="range"
+                min="0"
+                max="255"
+                value="238"
+                class="color-slider"
+                id="color-slider-blue"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- color sliders ends here -->
+      </section>
+      <!-- change and copy color section ends here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
